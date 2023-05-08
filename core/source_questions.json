@@ -1,0 +1,142 @@
+{
+    "Q11": {
+        "title": "Q1: Neutron Source type",
+        "text": "Please choose one:",
+        "values": [
+            ["thermalreactor", "ThermalReactor"],
+            ["cyclotrone", "Cyclotrone"]
+        ],
+        "ok_text": "Next",
+        "cancel_text": "Cancel"
+    },
+
+    "Q11_details" : {
+        "type": "radio"
+    },
+
+    "Q1cyclotrone": {
+        "title": "Q1: Please choose incident particle",
+        "text": "Please choose one:",
+        "values": [
+            
+        ],
+        "ok_text": "Next",
+        "cancel_text": "Cancel"
+    },
+
+    "Q1cyclotrone_details" : {
+        "type": "radio",
+        "key": "particle",
+        "query": {
+            "source_type": "cyclotrone"
+        }
+    },
+
+    "Q2cyclotrone": {
+        "title": "Q2: Please choose target material",
+        "text": "Please choose one:",
+        "values": [
+            
+        ],
+        "ok_text": "Next",
+        "cancel_text": "Back"
+    },
+
+    "Q2cyclotrone_details" : {
+        "type": "radio",
+        "key": "target",
+        "query": {
+            "particle": null
+        }
+    },
+
+    "Q3cyclotrone": {
+        "title": "Q3: Please choose thick of target",
+        "text": "Please choose one:",
+        "values": [
+            
+        ],
+        "ok_text": "Next",
+        "cancel_text": "Back"
+    },
+
+    "Q3cyclotrone_details" : {
+        "type": "radio",
+        "key": "thick",
+        "query": {
+            "target": null
+        }
+    },
+
+    "Q4cyclotrone": {
+        "title": "Q4: Please choose energy of beam",
+        "text": "Please choose one:",
+        "values": [
+            
+        ],
+        "ok_text": "Next",
+        "cancel_text": "Back"
+    },
+
+    "Q4cyclotrone_details" : {
+        "type": "radio",
+        "key": "beam",
+        "query": {
+            "thick": null
+        }
+    },
+
+    "Q5cyclotrone": {
+        "title": "Q5: Please choose number of neutron groups",
+        "text": "Please choose one:",
+        "values": [
+            
+        ],
+        "ok_text": "Next",
+        "cancel_text": "Back"
+    },
+
+    "Q5cyclotrone_details" : {
+        "type": "radio",
+        "key": "groups",
+        "query": {
+            "beam": null
+        }
+    },
+
+    "Q6cyclotrone": {
+        "title": "Q6: Please choose among avaliable functions",
+        "text": "Please choose one: ",
+        "values": [
+            
+        ],
+        "ok_text": "Next",
+        "cancel_text": "Back"
+    },
+
+    "Q6cyclotrone_details" : {
+        "type": "radio",
+        "key": "angular_function",
+        "query": {
+            "groups": null
+        }
+    },
+
+    "Q7cyclotrone": {
+        "title": "Q6: Please choose among avaliable functions",
+        "text": "Please choose one: ",
+        "values": [
+            
+        ],
+        "ok_text": "Next",
+        "cancel_text": "Back"
+    },
+
+    "Q7cyclotrone_details" : {
+        "type": "radio",
+        "key": "energetic_function",
+        "query": {
+            "angular_function": null
+        }
+    }
+}

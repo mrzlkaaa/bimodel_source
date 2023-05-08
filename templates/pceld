@@ -1,0 +1,22 @@
+<source> = $W                # relative weight
+s-type = 1                  # cylinder or circle source.
+    proj = neutron          # kind of incident particle      
+        x0 = $x0            # x coordinate
+        y0 = $y0            # y coordinate
+        z0 = $z0            # minimum z coordinate
+        z1 = $z1            # maximum z coordinate
+        r0 = $r0            # radius [cm]
+        r1 = $r1            # inner radius [cm]
+        e-type = 5          # type of mesh
+            nm = $nm        # number of group
+            eg1 = $E1       # min energy
+            eg2 = $E2       # max energy
+            f(x) = $c*SINH(SQRT(x*$b))*exp(-x/$a)
+        dir =   data        # direction of beam [cosine]
+        a-type = $at        # angular distribution 5 - cosine, 15 - degree
+            ag1 = $ag1      # minimum cut off for angular distribution
+            ag2 = $ag2      # maximum cut off for angular distribution
+            nn = $nn        # number of angular group.
+            g(x) = $A*exp(-ABS((x-1))/$S)      # Any analytical function of x
+ 
+ 

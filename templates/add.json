@@ -1,0 +1,16 @@
+{
+    "name": "",
+    "note":"",
+    "source_type": "",
+    "particle" : "",
+    "target": "",
+    "thick": "",
+    "beam": "",
+    "groups": "",
+    "template": "",
+    "angular_function": "",
+    "angular_params": {},
+    "energetic_function": "",
+    "energetic_params" :
+        {}
+}

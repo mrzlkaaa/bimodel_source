@@ -1,0 +1,40 @@
+prompt:
+  flag:
+    X: "X_col_name"
+    x_col_name: "X_col_name"
+    dud: "dud"
+    Z: "zero_centered"
+    zero_centered: "zero_centered"
+    cos: "cos"
+    N: "norm"
+    norm: "norm"
+    ff: "ff"
+  dtype:
+    X_col_name: str
+    dud: list
+    zero_centered: bool
+    cos: bool
+    norm: bool
+    ff: str
+source:
+  type:
+    poly:
+      x0: "0"
+      y0: "0"
+      z0: "0"
+      z1: "1"
+      r0: "1"
+      r1: "0"
+      at: "15"
+      ag1: "0"
+      ag2: "90"
+      nn: "100"
+      A: "1"
+      sigma: "1"
+fit:
+  ff:
+    gauss: gauss
+    laplace: laplace
+    watt: watt
+    maxwell: maxwell
+    gamma: gamma
