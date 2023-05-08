@@ -80,9 +80,8 @@ class SourceWriter(ABC):
         #*
         '''
         path = os.path.join(
-            os.path.split(
-                os.path.split(os.path.abspath(__file__))[0]
-            )[0],
+            
+            os.path.split(os.path.abspath(__file__))[0],
             "templates",
             source_template
         )
@@ -196,7 +195,6 @@ class PlainPhitsSourceWriter(SourceWriter):
 
 
         template = self._template_path("add.json") #* better to be defined as init param
-
         #! not as clear as should
         #todo create method - loads_json
 
@@ -223,26 +221,26 @@ class PlainPhitsSourceWriter(SourceWriter):
         with open("source", "a+") as f:
             f.write(block)
 
-    def _template_path(self, source_template):
-        '''
-        #* Method description
-        #* Parameters
-        #* ----------
-        #*
-        #* Raises
-        #* ----------
-        #*
-        #* Returns
-        #* ----------
-        #*
-        '''
-        return os.path.join(
-            os.path.split(
-                os.path.split(os.path.abspath(__file__))[0]
-            )[0],
-            "templates",
-            source_template
-        )
+    # def _template_path(self, source_template):
+    #     '''
+    #     #* Method description
+    #     #* Parameters
+    #     #* ----------
+    #     #*
+    #     #* Raises
+    #     #* ----------
+    #     #*
+    #     #* Returns
+    #     #* ----------
+    #     #*
+    #     '''
+    #     return os.path.join(
+    #         os.path.split(
+    #             os.path.split(os.path.abspath(__file__))[0]
+    #         )[0],
+    #         "templates",
+    #         source_template
+    #     )
 
     def _source_params_refactorer(self, source_params: T) -> V:
         

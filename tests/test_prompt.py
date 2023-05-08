@@ -5,6 +5,8 @@ from .test_preprocessing import file_name, Preprocessor
 from core import config, questions
 from core.db import Cyclotrone
 from core.writer import PlainPhitsSourceWriter
+from prompt_toolkit.shortcuts import input_dialog
+import inspect
 
 
 # from PyInquirer import prompt
@@ -76,6 +78,8 @@ def test_get_source_params(p):
     print(source)
     assert 0
 
+def test_new_source_data(p):
+    p.new_source_data()
 
 @pytest.fixture
 def Commands():
@@ -109,4 +113,7 @@ def test_write_source():
     #     energetic_params=d["energetic_params"]
     # ).fit_to_template()
 
-    
+def test_inspect_dialog():
+    print(dir(input_dialog))
+    print(inspect.getmembers(input_dialog))
+    assert 0
